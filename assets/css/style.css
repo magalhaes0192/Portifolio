@@ -11,6 +11,10 @@ body {
     background-color: #081B29;
 }
 
+section{
+    scroll-behavior: smooth;
+}
+
 
 h1 {
     color: #fff;
@@ -44,6 +48,24 @@ section {
 
 b {
     color: #00ABF0;
+}
+
+.topoDoSite{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    height:55px;
+    width:55px;
+    background-color: #00ABF0;
+    color: #081B29;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.topoDoSite i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilizações do Header */
@@ -90,6 +112,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 550px;
+    scroll-behavior: smooth;
 }
 
 .header-links a:hover {
@@ -198,7 +221,7 @@ header {
 .sobre-mim-info {
     background-color: #122E43;
     width: 40%;
-    margin-top: 200px;
+    margin-top: 115px;
     margin-left: 50px;
 }
 
@@ -267,21 +290,21 @@ header {
 .progress-bar {
     background-color: #00ABF0;
     height: 2px;
-    width: 95%;
+    width: 99%;
     margin-left: 3px;
     height: 10px;
 }
 
 .css {
-    width: 90%;
+    width: 95%;
 }
 
 .php {
-    width: 75%;
+    width: 85%;
 }
 
 .js {
-    width: 65%;
+    width: 85%;
 }
 
 .flutter {
@@ -479,8 +502,7 @@ form {
     transition: .5s;
 }
 
-.input-group input::placeholder,
-.input-group textarea::placeholder {
+.input-group input::placeholder {
     color: #fff;
     transition: .5s;
 }
@@ -501,6 +523,10 @@ form {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s;
+}
+
+.msg label{
+    left: 395px;
 }
 
 .input-group input:focus+label,
@@ -553,6 +579,17 @@ form {
     visibility: visible;
 }
 
+.msg textarea:focus+label,
+.msg textarea:valid+label {
+    top: 20px;
+    left: 395px;
+    width: 110px;
+    background-color: #122E43;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+}
+
 form button {
     width: 300px;
     margin: 40px auto;
@@ -566,6 +603,13 @@ form button {
     border: 2px solid #00ABF0;
     font-size: 24px;
     font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form button:hover{
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 /* Estilizações do footer */
@@ -882,6 +926,7 @@ footer hr {
     .input-group input {
         width: 265px;
     }
+
 
     .input-group textarea {
         width: 564px;
